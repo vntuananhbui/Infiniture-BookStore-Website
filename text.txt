@@ -1,0 +1,15 @@
+
+
+Work:
+Sunday!
+-Fix Title of categories
+-Create beauty name of categories
+-Responsive title categories 
+-Fix drop down categories
+-Change color of each categories
+-fix name of homepage
+-add link 
+-change all alt name
+
+
+New work:
