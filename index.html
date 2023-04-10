@@ -11,25 +11,24 @@
 </head>
 <body>
     <header>
-      <a href="index.html">
+      <a href="nonfiction_category_page.html">
         <div class="logo">
-            
             <img src="img/logo/logo.png" alt="infinitive logo">
         </div>
       </a>
         <nav class="navbar">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Categories</a></li>
+                <!-- <li><a href="#">Categories</a></li> -->
                 <li><a href="#">Book Detail</a></li>
-                <li><a href="#">Contact</a></li>
+                <!-- <li><a href="#">Contact</a></li> -->
                 <li>
                     <a href="#"><i class="fa fa-shopping-cart"></i></a>
                 </li>
                 <li class="dropdown">
-                    <a href="#" class="dropbtn">Browse Categories</a>
+                    <a href="#" class="dropbtn">Browse Categories | 👇</a>
                     <div class="dropdown-content">
-                        <a href="fiction_category_page.html">Fiction Books</a>
+                        <a href="../../fiction_category_page.html">Fiction Books</a>
                         <a href="nonfiction_category_page.html">Nonfiction Books</a>
                         <a href="textbook_category_page.html">Textbooks</a>
                     </div>
@@ -39,18 +38,20 @@
            
     </header>
     <banner>
+      <a href="index.html">
         <div class="banner-container">
             <img src="img/banner/banner1.png" alt="Shop Banner" class="main-banner">
             <img src="img/banner/responsive_banner1.png" alt="Responsive Shop Banner" class="responsive-banner">
         </div>
         <div class="responsive-banner">
         </div>
+      </a>
     </banner>
     <main>
-        <h1>Books Of the Day</h1>
+        <h1 class="bestbook-title">BOOKS OF THE DAY</h1>
        
         <div class="book-container-wrapper" id="BOTD">
-            <div class="bestbook-container">
+            <div class="bestbook-container" id="bb1">
               <div class="book-cover">
                 <img src="img/bestbook/bestbook1.png" alt="Book Cover">
               </div>
@@ -68,14 +69,13 @@
                 <button class="buy-btn">Buy Now</button>
               </div>
             </div>
-            <div class="bestbook-container">
+              <div class="bestbook-container">
                 <div class="book-cover">
-                  <img src="img/bestbook/bestbook2.png" alt="Book Cover" >
+                  <img src="img/bestbook/bestbook3.png" alt="Book Cover">
                 </div>
                 <div class="book-info">
-                  <h3>The Mind Of A LEADER</h3>
-                  <p>By Noah Schumacher</p>
-                  <p>2020</p>
+                  <h3>Dream of a Distant Home</h3>
+                  <p>By Aaron Loeb</p>
                   <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -88,11 +88,12 @@
               </div>
               <div class="bestbook-container">
                 <div class="book-cover">
-                  <img src="img/bestbook/bestbook3.png" alt="Book Cover">
+                  <img src="img/bestbook/bestbook2.png" alt="Book Cover" >
                 </div>
                 <div class="book-info">
-                  <h3>Dream of a Distant Home</h3>
-                  <p>By Aaron Loeb</p>
+                  <h3>Terra Ascending</h3>
+                  <p>By Max Banks</p>
+                  <p>2020</p>
                   <div class="rating">
                     <i class="fa fa-star"></i>
                     <i class="fa fa-star"></i>
@@ -277,7 +278,7 @@
         <div class="categories1-cover">
           <img src="img/categories/textbook/bussiness/2.png" alt="BookCover">
           <div class="book-info">
-            <h3>Marketing</h3>
+            <h3>Financial & Marketing</h3>
             <p>By Samuel</p>
             <p>2022</p>
             <p><a href="textbook_category_page.html#cat-business-textbook" target="_blank">Bussiness-Textbook</a></p>
@@ -311,7 +312,7 @@
         <div class="categories1-cover">
           <img src="img/categories/textbook/tech/2.png" alt="BookCover">
           <div class="book-info">
-            <h3>USB Tech</h3>
+            <h3>USB Technology</h3>
             <p>By Jonathan Patterson</p><p>2021</p>
             <p><a href="textbook_category_page.html#cat-science-textbook" target="_blank">Science-Textbook</a></p>
             <div class="rating">
@@ -327,7 +328,7 @@
         <div class="categories1-cover">
           <img src="img/categories/textbook/tech/1.png" alt="BookCover">
           <div class="book-info">
-            <h3>MachineLearning</h3>
+            <h3>Machine Learning</h3>
             <p>By Aaron Loeb</p>
             <p>2020</p>
             <p><a href="textbook_category_page.html#cat-science-textbook" target="_blank">Science-Textbook</a></p>

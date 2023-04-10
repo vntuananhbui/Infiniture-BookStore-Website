@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📖 | Infiniture Bookstore | 📖</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="/bookdetail/book-1/fiction-science-1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />
+</head>
+<style>
+  .book-detail {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.book-page {
+  margin-right: 20px;
+  border: 6px solid purple;
+}
+.book-page img {
+    width: 400px;
+    height: 600px;
+  }
+.sub-pages {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 80px;
+  
+}
+.sub-pages img {
+  border: 6px solid purple;
+  transition: all 0.3s ease-in-out;
+  margin-bottom: 10px; /* Add margin-bottom to create space between the images */
+}
+
+.sub-pages img:hover {
+  transform: scale(2);
+  z-index: 1;
+  top: 50%;
+  
+  
+  
+}
+
+
+.book-details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.prices {
+display: flex;
+flex-direction: row;
+justify-content: center;
+align-items: baseline;
+text-align: center;
+
+}
+
+
+.ebook, .hardcover, .paperback {
+display: inline-block;
+margin: 10px;
+border: 2px solid gray;
+border-radius: 5px;
+padding: 10px;
+}
+.ebook:hover, .hardcover:hover, .paperback:hover {
+border: 4px solid rgb(255, 115, 0);
+
+background-color: rgb(251, 168, 74);
+cursor: pointer;
+}
+.cart-button {
+margin-top: 10px;
+}
+.add-to-cart {
+  margin-top: 20px;
+  font-size: 30px;
+  border-radius: 10px;
+  padding: 10px;
+  
+  background-color: rgb(251, 168, 74);
+  box-shadow: rgb(251, 168, 74) 0px 2px 4px, rgb(251, 168, 74) 0px 7px 13px -3px, rgb(251, 168, 74) 0px -3px 0px inset;
+}
+.add-to-cart:hover {
+  background-color: orange;
+  cursor: pointer;
+}
+.breadcrumb-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+  margin-top: 20px;
+  
+}
+
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+}
+
+.separator {
+  margin: 0 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+.book-info {
+  /* border: 6px solid orchid; */
+  width: 800px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.title-book-name {
+  color: purple;
+}
+
+/* Responsive */
+@media only screen and (max-width: 970px) {
+  .book-detail {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .book-page {
+    margin-right: 0;
+  }
+  .book-detail img {
+    max-width: 100%;
+    height: auto;
+    
+  }
+  .sub-pages {
+    flex-direction: row;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  .book-page img {
+    border: 1px solid white;
+  }
+  .sub-pages img {
+    margin-right: 10px;
+    border: 1px solid white;
+  }
+
+  .book-details {
+    width: 100%;
+  }
+
+  .book-info {
+    width: 100%;
+    margin-top: 20px;
+  }
+}
+hr {
+  border: none;
+  height: 5px;
+  background-color: black;
+}
+
+.book-cover img {
+    width: 100%;
+    height: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    
+  }
+
+  submain .book-info {
+    display: inline-block;
+    width: 66.67%;
+    padding: 0 20px;
+  }
+  .rating {
+    color: #f39c12;
+    margin-bottom: 10px;
+  }
+  .rating i {
+    font-size: 16px;
+    margin-right: 5px;
+  }
+  
+  .buy-btn {
+    background-color: #f39c12;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .buy-btn:hover {
+    background-color: #e67e22;
+  }
+  .bestbook-container:last-of-type {
+    margin-right: 0;
+  }
+  submain h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  submain .related-book-wrapper {
+    display: flex;
+    overflow-x: auto;
+    padding: 30px;
+    
+    overflow: auto;
+    
+  }
+
+  .book-categories-container1 {
+    display: flex;
+    width: fit-content;
+    
+  }
+  .categories1-cover {
+    
+    display: flex;
+    align-items: center;
+    border: 2px solid black;
+    width: calc(15% - 20px);
+    margin-right: 20px;
+    flex-shrink: 0;
+  }
+  .categories1-cover img {
+    width: 50%;
+    height: auto;
+  }
+  
+
+  .book-cover img {
+    width: auto;
+    height: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    
+  }
+
+
+
+
+
+
+
+
+
+
+</style>
+<body>
+    <header>
+      <a href="nonfiction_category_page.html">
+        <div class="logo">
+            <img src="img-bookdetail/logo/logo.png" alt="infinitive logo">
+        </div>
+      </a>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <!-- <li><a href="#">Categories</a></li> -->
+                <li><a href="#">Book Detail</a></li>
+                <!-- <li><a href="#">Contact</a></li> -->
+                <li>
+                    <a href="#"><i class="fa fa-shopping-cart"></i></a>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Browse Categories | 👇</a>
+                    <div class="dropdown-content">
+                        <a href="fiction_category_page.html">Fiction Books</a>
+                        <a href="nonfiction_category_page.html">Nonfiction Books</a>
+                        <a href="textbook_category_page.html">Textbooks</a>
+                    </div>
+                </li>
+              </ul>
+        </nav>
+           
+    </header>
+    <main>
+      <div class="breadcrumb-container">
+        <div class="breadcrumb">
+          <a href="#">Home</a>
+          <span class="separator">&gt;</span>
+          <a href="#">Fiction</a>
+          <span class="separator">&gt;</span>
+          <a href="#">Science</a>
+          <span class="separator">&gt;</span>
+          <a href="#">Book Name | Alien</a>
+        </div>
+      </div>
+      
+      <div class="book-detail">
+        <div class="book-page">
+          <img src="/bookdetail/book-1/img-bookdetail/sciencefiction/1.png" alt="Book cover">
+        </div>
+        <div class="sub-pages">
+          <img src="/bookdetail/book-1/img-bookdetail/sciencefiction/1/1.png" alt="Sub page 1" width="150" height="200">
+          <img src="/bookdetail/book-1/img-bookdetail/sciencefiction/1/2.png" alt="Sub page 2" width="150" height="200">
+          <img src="/bookdetail/book-1/img-bookdetail/sciencefiction/1/3.png" alt="Sub page 3" width="150" height="200">
+        </div>
+        <div class="book-details">
+          <div class="prices">
+            <div class="ebook">
+              <p>Ebook Edition</p>
+              <p>3$</p>
+            </div>
+            <div class="hardcover">
+              <p>Hard Cover</p>
+              <p>1$</p>
+            </div>
+            <div class="paperback">
+              <p>Paperback</p>
+              <p>5$</p>
+            </div>
+          </div>
+          <div class="cart-button">
+            <button class="add-to-cart"><i class="fas fa-cart-plus"></i>| Add to Cart</button>
+          </div>
+        </div>
+      </div>
+    
+    
+      <div class="book-info">
+          <h1 class="title-book-name">Book name: Alien</h1>
+          <h3>Author: Margarita Perez</h3>
+          <h3>Publish: 2022</h3>
+          <h3>Description: "In this exciting science fiction book about an alien invasion, explore a world beyond our own. Humanity is plunged into chaos when weird, extraterrestrial entities come on Earth without warning. A group of courageous scientists and soldiers must work together to learn the aliens' secrets and protect the planet from impending devastation as they start to expose their true intentions. This riveting first contact story will have you on the edge of your seat with its heart-pounding action, mind-bending surprises, and lovable characters."</h3>
+      </div>
+      <hr>
+
+
+
+
+
+
+    </main>
+    <submain>
+      <h1>Related book</h1>
+      <div class="related-book-wrapper">
+      <div class="book-categories-container1">
+        <div class="categories1-cover">
+          <img src="../../img/categories/fiction/sciencefiction/2.png" alt="BookCover">
+          <div class="book-info">
+            <h3><br>Alien</h3>
+            <p>By Margarita Perez</p>
+            <p>2022</p>
+            <p><a href="#">Science-Fiction</a></p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+        </div>
+        <div class="categories1-cover">
+          <img src="../../img/categories/fiction/sciencefiction/3.png" alt="BookCover" >
+          <div class="book-info">
+            <h3>TERRA ASCENDING</h3>
+            <p>By Olivia Wason</p>
+            <p>2022</p>
+            <p><a href="#">Science-Fiction</a></p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+        </div>
+        <div class="categories1-cover">
+          <img src="../../img/categories/fiction/sciencefiction/4.png" alt="BookCover">
+          <div class="book-info">
+            <h3>Dream of a Distant Home</h3>
+            <p>By Jonathan Patterson</p><p>2021</p>
+            <p><a href="#">Science-Fiction</a></p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+        </div>
+        <div class="categories1-cover">
+          <img src="img/categories/fiction/sciencefiction/4.png" alt="BookCover">
+          <div class="book-info">
+            <h3>SPACE WARS</h3>
+            <p>By Aaron Loeb</p>
+            <p>2020</p>
+            <p><a href="#">Science-Fiction</a></p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+        </div>
+          <div class="categories1-cover">
+          <div class="book-info">
+            <h3>DONT GO THERE</h3>
+            <p>By Samuel</p>
+            <p>2022</p>
+            <p><a href="#">Horror-Fiction</a></p>
+            <div class="rating">
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+              <i class="fa fa-star"></i>
+            </div>
+            <button class="buy-btn">Buy Now</button>
+          </div>
+          </div>
+          <div class="categories1-cover">
+            <img src="img/categories/fiction/horor/2.png" alt="BookCover" >
+            <div class="book-info">
+              <h3>JOURNEY TO DEATH</h3>
+              <p>By Olivia Wason</p>
+              <p>2022</p>
+              <p><a href="#">Horror-Fiction</a></p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <button class="buy-btn">Buy Now</button>
+            </div>
+          </div>
+          <div class="categories1-cover">
+            <img src="img/categories/fiction/horor/3.png" alt="BookCover">
+            <div class="book-info">
+              <h3>IN THE FOREST</h3>
+              <p>By Jonathan Patterson</p><p>2021</p>
+              <p><a href="#">Horror-Fiction</a></p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <button class="buy-btn">Buy Now</button>
+            </div>
+          </div>
+          <div class="categories1-cover">
+            <img src="img/categories/fiction/horor/4.png" alt="BookCover">
+            <div class="book-info">
+              <h3>NIGHTMARE SIDE</h3>
+              <p>By Aaron Loeb</p>
+              <p>2020</p>
+              <p><a href="#">Horror-Fiction</a></p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <button class="buy-btn">Buy Now</button>
+            </div>
+          </div>
+          <div class="categories1-cover">
+            <img src="img/categories/fiction/romance/1.png" alt="BookCover">
+            <div class="book-info">
+              <h3>BY YOUR SIDE</h3>
+              <p>By Claudia Wilson</p>
+              <p>2022</p>
+              <p><a href="#">Romance-Fiction</a></p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <button class="buy-btn">Buy Now</button>
+            </div>
+          </div>
+          <div class="categories1-cover">
+            <img src="img/categories/fiction/romance/2.png" alt="BookCover" >
+            <div class="book-info">
+              <h3>OUR LAST SUMMER</h3>
+              <p>By Claudia Wilson</p>
+              <p>2022</p>
+              <p><a href="#">Romance-Fiction</a></p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <button class="buy-btn">Buy Now</button>
+            </div>
+          </div>
+          <div class="categories1-cover">
+            <img src="img/categories/fiction/romance/3.png" alt="BookCover">
+            <div class="book-info">
+              <h3>LOVE IN THE RAIN</h3>
+              <p>By Rodriguez</p><p>2021</p>
+              <p><a href="#">Romance-Fiction</a></p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <button class="buy-btn">Buy Now</button>
+            </div>
+          </div>
+          <div class="categories1-cover">
+            <img src="img/categories/fiction/romance/4.png" alt="BookCover">
+            <div class="book-info">
+              <h3>LOVE AND LIFE</h3>
+              <p>By Musk Evan</p>
+              <p>2020</p>
+              <p><a href="#">Romance-Fiction</a></p>
+              <div class="rating">
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+                <i class="fa fa-star"></i>
+              </div>
+              <button class="buy-btn">Buy Now</button>
+            </div>
+        </div>
+      </div>
+      </div>
+       
+      
+      
+      </submain>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <footer>
+      <div class="row"> 
+          <div class="col">
+              <img src="img-bookdetail/logo/logo.png" alt="logofooter">
+              <p>Text helo my name is bui tuan anh im from viet nam welcome to my channel</p>
+          </div>
+          <div class="col">
+              <h3>Our Special <div class="underline"><span></span></div></h3>
+              <p>Fast Delivery</p>
+              <p>Best Quanlity</p>
+              <p>Authentic</p>
+              <p>Update newest</p>
+              <p>Support 24/7</p>
+              
+          </div>
+          <div class="col">
+              <h3>Links <div class="underline"><span></span></h3>
+              <ul>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Copyright</a></li>
+                <li><a href="">Contact Us</a></li>
+              </ul>
+          </div>
+          <div class="col">
+            <h3>Notice Latest Book <div class="underline"><span></span></h3>
+            <form>
+              <i class="far fa-envelope"></i>
+              <input type="email" placeholder="Enter your email id">
+              <button type="submit"><i class="fas fa-arrow-right"></i></button>
+            </form>
+            <div class="social-icons">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-youtube"></i>
+              <i class="fab fa-twitter"></i>
+            </div>
+          </div>
+      </div>
+      <hr>
+      <p class="copyright">TomBui @ 2023 - RMIT University</p>
+  </footer>
+</body>
+</html>
