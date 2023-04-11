@@ -16,3 +16,4 @@ New work:
 Update href and src with /
 change all location
 update all book detail
+add target="_blank"
