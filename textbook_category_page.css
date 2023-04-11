@@ -10,7 +10,17 @@
 * {
   font-family: 'Rockwell';
 }
+a {
+  text-decoration: none;
   
+}
+a:hover {
+text-decoration: underline;
+color: rgb(229, 233, 8);
+}
+.navbar a:hover {
+  color: yellow;
+}
 top {
   display: flex;
   flex-direction: column;
@@ -141,13 +151,12 @@ top h1 {
       }
       
       .dropbtn {
-      background-color: lightblue;
-      color: white;
-      padding: 10px 20px;
-      font-size: 16px;
-      border: none;
-      cursor: pointer;
-      border-radius: 20px;
+      
+        color: white;
+        padding: 10px 20px;
+        font-size: 16px;
+        border: 5px solid white;
+        cursor: pointer;
       }
       
       .dropdown-content {

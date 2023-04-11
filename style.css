@@ -81,7 +81,18 @@ header {
     text-decoration: none;
     color: white;
   }
-  
+
+  a {
+    text-decoration: none;
+    
+  }
+  a:hover {
+  text-decoration: underline;
+  color: rgb(229, 233, 8);
+  }
+  .navbar a:hover {
+    color: yellow;
+  }
       /* Dropdown Button */
 .dropdown {
   position: relative;
