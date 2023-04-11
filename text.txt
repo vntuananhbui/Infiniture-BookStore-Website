@@ -13,3 +13,7 @@ Sunday!
 
 
 New work:
+change a { 
+    text-decoration: none;
+    color: black;
+}
