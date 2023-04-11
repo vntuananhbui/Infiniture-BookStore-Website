@@ -13,7 +13,6 @@ Sunday!
 
 
 New work:
-change a { 
-    text-decoration: none;
-    color: black;
-}
+Update href and src with /
+change all location
+update all book detail
