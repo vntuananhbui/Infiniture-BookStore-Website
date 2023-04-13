@@ -13,8 +13,12 @@ Sunday!
 
 
 New work:
-Update href and src with /
-change all location
 update all book detail
 add target="_blank"
 change all width of book detail to css
+
+NOTE: Videos
+
+Work:
+Nonfiction and Textbook
+Fix nav bar (header and footer)
