@@ -208,7 +208,7 @@ main h1 {
     
   }
 .bestbook-container {
-  animation: border-color 4s infinite;
+  animation: border-color 1s infinite;
 }
   @keyframes border-color {
     0% {
