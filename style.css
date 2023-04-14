@@ -27,6 +27,9 @@ header {
     padding: 20px;
     background-image: linear-gradient(to right,#00093c,#2d0b00);
     align-items: center;
+    /* position: fixed;
+    width: 100%;
+    top: 0; */
 }
 .logo {
     display: flex;
@@ -40,7 +43,8 @@ header {
   }
   
 .banner-container {
-  position: relative;
+  /* position: relative; */
+  
 }
 
 .main-banner {
