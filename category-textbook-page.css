@@ -19,18 +19,8 @@
     }
 
 
-  a {
-    text-decoration: none;
-    color: black;
-    
-  }
-  a:hover {
-  text-decoration: underline;
-  color: rgb(229, 233, 8);
-  }
-  .navbar a:hover {
-    color: yellow;
-  }
+
+
 
 /* ********** */
 /* Top Header */
@@ -157,8 +147,12 @@ top h1 {
   color: black;
 
   }
+
+  .book-info h3:hover{
+    color: rgb(233, 120, 8);
+  }
   a:hover {
-  text-decoration: underline;
+  
   color: rgb(233, 120, 8);
   }
   .navbar a:hover {

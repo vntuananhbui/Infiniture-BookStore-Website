@@ -19,18 +19,7 @@ body {
   }
 
 
-a {
-  text-decoration: none;
-  color: black;
-  
-}
-a:hover {
-text-decoration: underline;
-color: rgb(229, 233, 8);
-}
-.navbar a:hover {
-  color: yellow;
-}
+
 
 /* ********** */
 /* Top Header */
@@ -152,18 +141,24 @@ text-decoration: none;
 color: white;
 }
 
-a {
+ a {
 text-decoration: none;
-color: black;
+color: black; 
 
 }
 a:hover {
-text-decoration: underline;
+text-decoration: none;
 color: rgb(233, 120, 8);
+} 
+.book-info h3:hover {
+  color: rgb(233, 120, 8);
 }
+
 .navbar a:hover {
 color: rgb(255, 153, 0);
 }
+
+
   /* Dropdown Button */
 .dropdown {
 position: relative;

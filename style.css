@@ -80,8 +80,9 @@ a {
 }
 
 a:hover {
-  text-decoration: underline;
-  color: rgb(233, 120, 8);
+  /* text-decoration: underline; */
+  /* color: rgb(233, 120, 8); */
+  color: yellow;
 }
 
 .navbar a:hover {

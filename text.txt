@@ -22,3 +22,54 @@ NOTE: Videos
 Work:
 Nonfiction and Textbook
 Fix nav bar (header and footer)
+
+
+
+bookdetail:
+Textbook
+    science: 4 , 3 , 2 , 1
+    history: 4,3 ,2,1
+    business: 4,3,2,1
+Nonfiction
+    travel: 4,3,2,1
+    tech: 4,3,2,1
+    self: 4,3,2,1
+Fiction
+    science: 4,,3,2,1
+    romance: 4,3,2
+
+
+
+category link:
+Fiction
+    science: category-fiction-page.html#cat-science-fiction / category-fiction-page.html#cat-science-fiction" target="_blank
+    horror: category-fiction-page.html#cat-horror-fiction  / category-fiction-page.html#cat-horror-fiction" target="_blank
+    romance: category-fiction-page.html#cat-romance-fiction / category-fiction-page.html#cat-romance-fiction" target="_blank
+
+Nonfiction
+    techno: category-nonfiction-page.html#cat-tech-nonfiction / category-nonfiction-page.html#cat-tech-nonfiction" target="_blank
+    self : category-nonfiction-page.html#cat-self-nonfiction / category-nonfiction-page.html#cat-self-nonfiction" target="_blank
+    travel: category-nonfiction-page.html#cat-travel-nonfiction / category-nonfiction-page.html#cat-travel-nonfiction" target="_blank
+textbook:
+    business: category-textbook-page.html#cat-business-textbook / category-textbook-page.html#cat-business-textbook" target="_blank
+    history: category-textbook-page.html#cat-history-textbook / category-textbook-page.html#cat-history-textbook" target="_blank
+    science: category-textbook-page.html#cat-science-textbook / category-textbook-page.html#cat-science-textbook" target="_blank
+
+
+!!! Change ALT
+
+Alt book: 
+Fiction
+    Science: fiction-science-1
+    Horror : fiction-horror-1
+    romance: fiction-romance-1
+Nonfiction
+    Tech: nonfic-tech-1
+    Self: nonfic-self-1
+    travel: nonfic-travel-1
+
+Textbook
+    business: text-business-1
+    history : text-history-1
+    science: text-science-1
+
