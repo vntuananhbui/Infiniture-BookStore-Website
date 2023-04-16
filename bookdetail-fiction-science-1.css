@@ -1,474 +1,476 @@
-body {
-background-color: lightblue
-}
+/* Create Font */
 @font-face {
-font-family: 'Rockwell';
-src: url('rockwell.woff2') format('woff2'), /* Replace with the actual font file names and formats */
+    font-family: 'Rockwell';
+    src: url('rockwell.woff2') format('woff2'), /* Replace with the actual font file names and formats */
     url('rockwell.woff') format('woff'),
     url('rockwell.ttf') format('truetype');
-font-weight: normal;
-font-style: normal;
-}
-* {
-font-family: 'Rockwell';
-}
-/* ********** */
-/* HEADER */
-header {
-display: flex;
-padding: 20px;
-background-image: linear-gradient(to right,#00093c,#2d0b00);
-align-items: center;
-}
+    font-weight: normal;
+    font-style: normal;
+    }
 
-.logo {
-display: flex;
-align-items: center;
-}
+    /* Main CSS */
 
-.logo img {
+    body {
+    background-color: lightblue;
+    }
+    * {
+    font-family: 'Rockwell';
+    }
+    /* ********** */
+    /* HEADER */
+    header {
+    display: flex;
+    padding: 20px;
+    background-image: linear-gradient(to right,#360033,#3c1053);
+    align-items: center;
+    }
+    .logo {
+    display: flex;
+    align-items: center;
+    }
 
-display: inline-block;
-vertical-align: middle;
-}
+    .logo img {
 
-.banner-container {
-position: relative;
-}
-
-.main-banner {
-width: 100%;
-height: 1000px;
-}
-
-.responsive-banner {
-display: none;
-}
+    display: inline-block;
+    vertical-align: middle;
+    }
 
 
-/* navbar */
-.navbar {
-display: flex;
-font-size: 20px;
-align-items: center;
-justify-content: flex-end;
-color: #fff;
-height: 50px;
-margin: 0 auto;
-}
+    .main-banner {
+    width: 100%;
+    height: 1000px;
+    }
+    .responsive-banner {
+    display: none;
+    }
 
-.navbar ul {
-list-style: none;
-display: flex;
-align-items: center;
-justify-content: flex-end;
-}
 
-.navbar li {
-margin-left: 20px;
-margin-right: 90px;
-}
+    /* navbar */
+    .navbar {
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    color: #fff;
+    height: 50px;
+    margin-left: auto; /*Start Navbar from Left */
+    }
 
-.navbar a {
-text-decoration: none;
-color: white;
-}
+    .navbar ul {
 
-a {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    }
+
+    .navbar li {
+    margin-left: 20px;
+    margin-right: 90px;
+    }
+
+    .navbar a {
+    text-decoration: none;
+    color: white;
+    }
+
+    a {
     text-decoration: none;
     color: black;
-  }
 
-a:hover {
-text-decoration: underline;
-color: rgb(229, 233, 8);
-}
+    }
+    a:hover {
+    text-decoration: underline;
+    color: rgb(233, 120, 8);
+    }
+    .navbar a:hover {
+    color: rgb(255, 153, 0);
+    }
+    /* Dropdown Button */
+    .dropdown {
+    position: relative;
+    display: inline-block;
 
-.navbar a:hover {
-color: yellow;
-}
+    }
 
-/* Dropdown Button */
+    .dropbtn {
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: 3px solid white;
+    cursor: pointer;
 
-.dropdown {
-position: relative;
-display: inline-block;
-}
+    }
 
-.dropbtn {
-color: white;
-padding: 10px 20px;
-font-size: 16px;
-border: 5px solid white;
-cursor: pointer;
-}
+    .dropdown-content {
+    margin-top: 10px;
+    display: none;
+    position: absolute;
+    z-index: 1;
+    background-color: #3c1053;
+    min-width: 100%;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 
-.dropdown-content {
-margin-top: 10px;
-display: none;
-position: absolute;
-z-index: 1;
-background-color: lightblue;
-min-width: 160px;
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    }
 
-}
+    .dropdown-content a {
+    color: white;
+    margin-top: 5px;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
 
-.dropdown-content a {
-color: black;
-padding: 12px 16px;
-text-decoration: none;
-display: block;
+    }
 
-}
+    .dropdown:hover .dropdown-content {
+    display: block;
+    }
 
-.dropdown:hover .dropdown-content {
-display: block;
-}
+    /* Book details */
 
-/* Book details */
+    .book-detail {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
 
-.book-detail {
-display: flex;
-align-items: center;
-justify-content: center;
-}
-
-.book-details {
+    .book-details {
     display: flex;
     flex-direction: column;
     justify-content: center;
     text-align: center;
     }
 
-.book-page {
-margin-right: 20px;
-border: 6px solid purple;
-}
+    .book-page {
+    margin-right: 20px;
+    border: 6px solid purple;
+    }
 
-.book-page img {
+    .book-page img {
     width: 400px;
     height: 600px;
-}
+    }
 
-.sub-pages {
-display: flex;
-flex-direction: column;
-justify-content: space-between;
-margin-right: 80px;
-}
+    .sub-pages {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 80px;
+    }
 
-.sub-pages img {
-border: 2px solid rgb(179, 235, 245);
-transition: all 0.3s ease-in-out;
-margin-bottom: 10px; /* Add margin-bottom to create space between the images */
-}
+    .sub-pages img {
+    border: 2px solid rgb(179, 235, 245);
+    transition: all 0.3s ease-in-out;
+    margin-bottom: 10px; /* Add margin-bottom to create space between the images */   
+    }
+    .sub-pages img:hover {
+    transform: scale(2);
+    z-index: 1;
+    top: 50%;
+    }
 
-.sub-pages img:hover {
-transform: scale(2);
-z-index: 1;
-top: 50%;
-}
+    .prices {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: baseline;
+    text-align: center;
+    }
 
-.prices {
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: baseline;
-text-align: center;
-}
+    .ebook, .hardcover, .paperback {
+    display: inline-block;
+    margin: 10px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    padding: 10px;
+    }
 
-.ebook, .hardcover, .paperback {
-display: inline-block;
-margin: 10px;
-border: 2px solid gray;
-border-radius: 5px;
-padding: 10px;
-}
+    .ebook:hover, .hardcover:hover, .paperback:hover {
+    border: 4px solid rgb(255, 115, 0);
+    background-color: rgb(251, 168, 74);
+    cursor: pointer;
+    }
 
-.ebook:hover, .hardcover:hover, .paperback:hover {
-border: 4px solid rgb(255, 115, 0);
-background-color: rgb(251, 168, 74);
-cursor: pointer;
-}
+    .cart-button {
+    margin-top: 10px;
+    }
 
-.cart-button {
-margin-top: 10px;
-}
+    .add-to-cart {
+    margin-top: 20px;
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 10px;
+    background-color: rgb(251, 168, 74);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
+    }
 
-.add-to-cart {
-margin-top: 20px;
-font-size: 30px;
-border-radius: 10px;
-padding: 10px;
-background-color: rgb(251, 168, 74);
-box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(17, 17, 26, 0.05) 0px 8px 32px;
-}
+    .add-to-cart:hover {
+    background-color: rgb(251, 255, 3);
+    cursor: pointer;
+    }
 
-.add-to-cart:hover {
-background-color: rgb(251, 255, 3);
-cursor: pointer;
-}
+    .breadcrumb-container {
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    margin-top: 20px;
+    }
 
-.breadcrumb-container {
-display: flex;
-justify-content: center;
-padding: 40px;
-margin-top: 20px;
-}
+    .breadcrumb {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    }
 
-.breadcrumb {
-display: flex;
-align-items: center;
-font-size: 18px;
-}
-
-.separator {
-margin: 0 10px;
-}
-
+    .separator {
+    margin: 0 10px;
+    }
 
 
-.book-info {
-/* border: 6px solid orchid; */
-width: 800px;
-margin: 0 auto;
-padding: 10px;
-}
 
-.title-book-name {
-color: purple;
-}
+    .book-info {
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    }
 
-hr {
-border: none;
-height: 5px;
-background-color: black;
-}
+    .title-book-name {
+    color: purple;
+    }
 
-.book-cover img {
+    hr {
+    border: none;
+    height: 5px;
+    background-color: black;
+    }
+
+    .book-cover img {
     width: 100%;
     height: auto;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
-    
-}
 
-submain .book-info {
+    }
+
+    /* Submain Relate Book*/
+
+    submain .book-info {
     display: inline-block;
     width: 66.67%;
     padding: 0 20px;
-}
+    }
+    submain h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
 
-.rating {
+    submain .related-book-wrapper {
+    display: flex;
+    overflow-x: auto;
+    padding: 30px;
+
+    overflow: auto;
+
+    }
+
+    .rating {
     color: #f39c12;
     margin-bottom: 10px;
-}
+    }
 
-.rating i {
-    font-size: 16px;
+    .rating i {
+    font-size: 18px;
     margin-right: 5px;
-}
+    animation: rating-change 2s linear infinite;
+    }
 
-.buy-btn {
+    .buy-btn {
     background-color: #f39c12;
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-}
+    }
 
-.buy-btn:hover {
+    .buy-btn:hover {
     background-color: #e67e22;
-}
+    }
 
-.bestbook-container:last-of-type {
+    .bestbook-container:last-of-type {
     margin-right: 0;
-}
+    }
 
-submain h1 {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
 
-submain .related-book-wrapper {
-    display: flex;
-    overflow-x: auto;
-    padding: 30px;
-    
-    overflow: auto;
-    
-}
 
-.related-book-wrapper .book-categories-container1 .categories1-cover {
+    .related-book-wrapper .book-categories-container1 .categories1-cover {
     background-image: linear-gradient(to right, #7f7fd5,#86a8e7,#91eae4);
-}
+    }
 
-.book-categories-container1 {
+    .book-categories-container1 {
     display: flex;
-    
-    
-}
-.categories1-cover {
-    
+
+
+    }
+    .categories1-cover {
+
     display: flex;
     align-items: center;
     border: 2px solid black;
     width: calc(25% - 10px);
     margin-right: 20px;
     flex-shrink: 0;
-}
-.categories1-cover img {
+    }
+    .categories1-cover img {
     width: 50%;
     height: auto;
-}
+    }
 
 
-.book-cover img {
+    .book-cover img {
     width: auto;
     height: auto;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
-    
-}
 
-footer {
-margin-top: 10px;
-width: 100%;
-position: relative;
-bottom: 0;
-background: linear-gradient(to right,#00093c,#2d0b00);
-color: #fff;
-padding: 100px 0 30px;
-border-top-left-radius: 125px;
-font-size: 13px;
-line-height: 20px;
-}
+    }
 
-.row {
-width: 85%;
-margin: auto;
-display: flex;
-flex-wrap: wrap;
-align-items: flex-start;
-/* justify-content: space-between; */
-}
+    footer {
+    margin-top: 10px;
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background-image: linear-gradient(to right,#360033,#3c1053);
+    color: #fff;
+    padding: 100px 0 30px;
+    border-top-left-radius: 125px;
+    font-size: 13px;
+    line-height: 20px;
+    }
 
-.col {
-flex-basis: 20%;
-padding: 10px;
-}
-.col:nth-child(1) {
-margin-right: 40px;
-}
+    .footer-item {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    }
 
-.col:nth-child(2){
-flex-basis: 20%;
-}
-.col:nth-child(3) {
-flex-basis: 20%;
-}
+    .footer-subitem {
+    flex-basis: 20%;
+    padding: 10px;
+    }
+    .footer-subitem:nth-child(1) {
+    margin-right: 40px;
+    }
 
-.logofooter {
-width: 80px;
-margin-bottom: 30px;
-}
+    .footer-subitem:nth-child(2){
+    flex-basis: 20%;
+    }
+    .footer-subitem:nth-child(3) {
+    flex-basis: 20%;
+    }
 
-.col h3 {
-width: fit-content;
-margin-bottom: 40px;
-position: relative;
+    .logofooter {
+    width: 80px;
+    margin-bottom: 30px;
+    }
 
-}
+    .footer-subitem h3 {
+    width: fit-content;
+    margin-bottom: 40px;
+    position: relative;
 
-footer ul {
-padding-inline-start: 0px;
-}
-footer ul li {
-list-style: none;
-margin-bottom: 12px;
-}
-footer ul li a {
-text-decoration: none;
-color: #fff;
+    }
 
-}
-form {
-padding-bottom: 15px;
-display: flex;
-align-items: center;
-justify-content: space-between;
-border-bottom: 1px solid #ccc;
-margin-bottom: 50px;
+    footer ul {
+    padding-inline-start: 0px;
+    }
+    footer ul li {
+    list-style: none;
+    margin-bottom: 12px;
+    }
+    footer ul li a {
+    text-decoration: none;
+    color: #fff;
 
-}
-form .far {
-font-size: 18px;
-margin-right: 5px;
-}
+    }
+    form {
+    padding-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 50px;
 
-form input {
-width: 100%;
-background: transparent;
-color: #ccc;
-border: 0;
-outline: none;
-}
-form button {
-background: transparent;
-border: 0;
-outline: none;
-cursor: pointer;
-}
-form button .fas {
-font-size: 16px;
-color: #ccc
-}
-.social-icons .fab {
-width: 40px;
-height: 40px;
-border-radius: 50%;
-text-align: center;
-line-height: 40px;
-font-size: 20px;
-color: #000;
-background: #fff;
-margin-right: 15px;
-cursor: pointer;
-}
+    }
+    form .far {
+    font-size: 18px;
+    margin-right: 5px;
+    }
 
-hr {
+    form input {
+    width: 100%;
+    background: transparent;
+    color: #ccc;
+    border: 0;
+    outline: none;
+    }
+    form button {
+    background: transparent;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    }
+    form button .fas {
+    font-size: 16px;
+    color: #ccc
+    }
+    .social-icons .fab {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 20px;
+    color: #000;
+    background: #fff;
+    margin-right: 20px;
+    cursor: pointer;
+    }
+
+    hr {
     width: 90%;
     border: 0;
     border-bottom: 1px solid #ccc;
     margin: 20px auto;
-}
-.copyright {
+    }
+    .copyright {
     text-align: center;
-}
+    }
 
-.underline {
+    .footer-item .footer-subitem a {
+    color: white;
+    }
+    .underline {
     width: 100%;
     height: 5px;
-    background: #767676;
+    background: rgb(3, 82, 252);
     border-radius: 3px;
     position: absolute;
     top: 25px;
     left: 0;
     overflow: hidden;
-}
-.underline span {
+    }
+    .underline span {
     width: 15px;
     height: 100%;
-    background: #fff;
+    background: rgba(208, 1, 255, 0.987);
     position: absolute;
     top:0;
     left: 10px;
     animation: moving 2s linear infinite;
-    
-}
 
-@keyframes moving {
+    }
+
+    @keyframes moving {
     0% {
     left:  -20px;
 
@@ -476,9 +478,9 @@ hr {
     100% {
     left: 100%;
     }
-}
+    }
 
-/* Responsive  */
+        /* Responsive  */
         @media (max-width: 970px) {
         /* Header Responsive */
         header {
@@ -489,7 +491,7 @@ hr {
             display: flex;
             align-items: center;
             
-        
+
             }
         .main-banner {
             display: none;
@@ -505,13 +507,14 @@ hr {
             align-items: flex-start;
             height: auto;
             padding: 5px 20px;
+            margin-left: 0;
         }
         .navbar ul {
             flex-direction: column;
             margin-top: 0px;
             
         }
-        
+
         .navbar li {
             margin-right: 50px;
             margin-bottom: 5px;
@@ -521,58 +524,58 @@ hr {
         .book-detail {
             flex-wrap: wrap;
             justify-content: center;
-          }
-        
-          .book-page {
+            }
+
+            .book-page {
             margin-right: 0;
-          }
-          .book-detail img {
+            }
+            .book-detail img {
             max-width: 100%;
             height: auto;
             
-          }
-          .sub-pages {
+            }
+            .sub-pages {
             flex-direction: row;
             display: flex;
             margin: 0 auto;
             margin-top: 20px;
             margin-bottom: 30px;
-          }
-          .book-page img {
+            }
+            .book-page img {
             border: 1px solid white;
-          }
-          .sub-pages img {
+            }
+            .sub-pages img {
             margin-right: 10px;
             border: 1px solid white;
-          }
-        
-          .book-details {
+            }
+
+            .book-details {
             width: 100%;
-          }
-        
-          .book-info {
+            }
+
+            .book-info {
             width: 100%;
             margin-top: 20px;
-          }
-          .categories1-cover {
-  
-          width: calc(25% - 10px);
-          }
-        
+            }
+            .categories1-cover {
+
+            width: calc(25% - 10px);
+            }
+
         footer {
             bottom: unset;
             }
-            .col {
+            .footer-subitem {
             flex-basis: 100%;
             
             }
-            .col:nth-child(1) img {
+            .footer-subitem:nth-child(1) img {
             width: 300px;
             height: 100px;
             }
-            .col:nth-child(2),.col:nth-child(3){
+            .footer-subitem:nth-child(2),.footer-subitem:nth-child(3){
             flex-basis: 100%;
+        }
+
             }
-        
-            }
-     
+

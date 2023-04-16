@@ -19,19 +19,20 @@
         <nav class="navbar">
             <ul>
                 <li><a href="#">Home</a></li>
-                <!-- <li><a href="#">Categories</a></li> -->
-                <li><a href="#">Book Detail</a></li>
-                <!-- <li><a href="#">Contact</a></li> -->
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Browse Categories </a>
+                    <div class="dropdown-content">
+                        <a href="category-fiction-page.html" target="_blank">Fiction Books</a>
+                        <a href="category-nonfiction-page.html" target="_blank">Nonfiction Books</a>
+                        <a href="category-textbook-page.html" target="_blank">Textbooks</a>
+                    </div>
+                </li>
+                <li><a href="contact.html" target="_blank">Contact Us</a></li>
+                <li>
+                  <a href="#">Support</a>
+                </li>
                 <li>
                     <a href="#"><i class="fa fa-shopping-cart"></i></a>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Browse Categories | 👇</a>
-                    <div class="dropdown-content">
-                        <a href="category-fiction-page.html">Fiction Books</a>
-                        <a href="category-nonfiction-page.html">Nonfiction Books</a>
-                        <a href="category-textbook-page.html">Textbooks</a>
-                    </div>
                 </li>
               </ul>
         </nav>
@@ -48,7 +49,7 @@
       </a>
     </banner>
     <main>
-        <h1 class="bestbook-title">BOOKS OF THE DAY</h1>
+        <h1 class="bestbook-title" id="bestbook-title">BOOKS OF THE DAY</h1>
        
         <div class="book-container-wrapper" id="BOTD">
             <div class="bestbook-container" id="bb1">
@@ -56,10 +57,12 @@
                 <img src="img/bestbook/bestbook1.png" alt="bestbook-1">
               </div>
               <div class="book-info">
-                <h3>The Ghost Priate Journey</h3>
-                <p>By Connor Hamilton</p>
-                <p>2019</p>
-            <p><a href="fiction_category_page.html#cat-science-fiction" target="_blank">Science-Fiction</a></p>
+                <a href="bookdetail-fiction-romance-1.html" target="_blank">
+                <h3><br>By Your Side</h3>
+                <p>By Claudia Wilson</p>
+                <p>2022</p>
+                </a>
+            <p><a href="category-fiction-page.html#cat-romance-fiction" target="_blank">Romance-Fiction</a></p>
                 <div class="rating">
                   <i class="fa fa-star"></i>
                   <i class="fa fa-star"></i>
@@ -75,7 +78,7 @@
                   <img src="img/bestbook/bestbook3.png" alt="bestbook-3">
                 </div>
                 <div class="book-info">
-                  <a href="bookdetail-fiction-science-3.html">
+                  <a href="bookdetail-fiction-science-3.html" target="_blank">
                     <h3>Dream of a Distant Home</h3>
                     <p>By Aaron Loeb</p><p>2021</p>
                   </a>
@@ -95,8 +98,8 @@
                   <img src="img/bestbook/bestbook2.png" alt="bestbook-2" >
                 </div>
                 <div class="book-info">
-                  <a href="bookdetail-fiction-science-2.html">
-                    <h3>Terra Ascending</h3>
+                  <a href="bookdetail-fiction-science-2.html" target="_blank">
+                    <h3><br>Terra Ascending</h3>
                     <p>By Max Banks</p>
                     <p>2022</p>
                     </a>
@@ -116,8 +119,8 @@
                   <img src="img/bestbook/bestbook4.png" alt="bestbook-4">
                 </div>
                 <div class="book-info">
-                  <h3>Sunsets with Annie</h3>
-                  <p>By Gretchen Fergusson</p>
+                  <h3>Financial Manage</h3>
+                  <p>By Robert Schemmel</p>
                   <p>2021</p>
                   <p><a href="category-textbook-page.html#cat-textbook-business" target="_blank">Bussiness-Textbook</a></p>
                   <div class="rating">
@@ -139,7 +142,7 @@
         <div class="categories1-cover">
           <img src="img/categories/fiction/sciencefiction/1.png" alt="BookCover">
           <div class="book-info">
-            <a href="bookdetail-fiction-science-1.html">
+            <a href="bookdetail-fiction-science-1.html" target="_blank">
               <h3><br>Alien</h3>
               <p>By Margarita Perez</p>
               <p>2022</p>
@@ -177,9 +180,11 @@
         <div class="categories1-cover">
           <img src="img/categories/fiction/horor/1.png" alt="BookCover">
           <div class="book-info">
+            <a href="bookdetail-fiction-horror-1.html">
             <h3>Don't Go There</h3>
             <p>By Caravich</p>
             <p>2023</p>
+            </a>
             <p><a href="category-fiction-page.html#cat-horror-fiction"  target="_blank">Horror-Fiction</a></p>
             <div class="rating">
               <i class="fa fa-star"></i>
@@ -194,9 +199,11 @@
         <div class="categories1-cover">
           <img src="img/categories/fiction/romance/2.png" alt="BookCover">
           <div class="book-info">
+            <a href="bookdetail-fiction-romance-2.html">
             <h3>Our Last Summer</h3>
             <p>By Claudia Wilson</p>
             <p>2022</p>
+          </a>
             <p><a href="category-fiction-page.html#cat-romance-fiction"  target="_blank">Romance-Fiction</a></p>
             <div class="rating">
               <i class="fa fa-star"></i>
@@ -218,9 +225,11 @@
         <div class="categories1-cover">
           <img src="img/categories/nonfiction/science/1.png" alt="BookCover">
           <div class="book-info">
+            <a href="bookdetail-nonfiction-tech-1.html">
             <h3>Future Technology</h3>
             <p>By Samuel</p>
             <p>2022</p>
+            </a>
             <p><a href="category-nonfiction-page.html#cat-tech-nonfiction"  target="_blank">Technology-Nonfiction</a></p>
             <div class="rating">
               <i class="fa fa-star"></i>
@@ -235,9 +244,11 @@
         <div class="categories1-cover">
           <img src="img/categories/nonfiction/selfhelp/3.png" alt="BookCover" >
           <div class="book-info">
+            <a href="bookdetail-nonfiction-self-3.html">
             <h3>Unlock True Potential</h3>
             <p>By Olivia Wason</p>
             <p>2022</p>
+          </a>
             <p><a href="category-nonfiction-page.html#cat-self-confiction"  target="_blank">Selfhelp-Nonfiction</a></p>
             <div class="rating">
               <i class="fa fa-star"></i>
@@ -252,8 +263,10 @@
         <div class="categories1-cover">
           <img src="img/categories/nonfiction/travel/1.png" alt="BookCover">
           <div class="book-info">
+            <a href="/bookdetail-nonfiction-travel-1.html">
             <h3>Travelling To Bali</h3>
             <p>By Neil Tran</p><p>2021</p>
+          </a>
             <p><a href="category-nonfiction-page.html#cat-travel-nonfiction" target="_blank">Travel-Nonfiction</a></p>
             <div class="rating">
               <i class="fa fa-star"></i>
@@ -268,9 +281,11 @@
         <div class="categories1-cover">
           <img src="img/categories/nonfiction/science/3.png" alt="BookCover">
           <div class="book-info">
+            <a href="bookdetail-nonfiction-tech-3.html">
             <h3>Am I A Robot?</h3>
             <p>By John Davies</p>
             <p>2020</p>
+            </a>
             <p><a href="category-textbook-page.css" target="_blank">Technology-Nonfiction</a></p>
             <div class="rating">
               <i class="fa fa-star"></i>
@@ -291,9 +306,11 @@
         <div class="categories1-cover">
           <img src="img/categories/textbook/bussiness/2.png" alt="BookCover">
           <div class="book-info">
+            <a href="bookdetail-textbook-business-2.html">
             <h3>Financial & Marketing</h3>
             <p>By Samuel</p>
             <p>2022</p>
+          </a>
             <p><a href="category-textbook-page.html#cat-business-textbook" target="_blank">Bussiness-Textbook</a></p>
             <div class="rating">
               <i class="fa fa-star"></i>
@@ -308,9 +325,11 @@
         <div class="categories1-cover">
           <img src="img/categories/textbook/history/2.png" alt="BookCover" >
           <div class="book-info">
+            <a href="bookdetail-textbook-history-2.html">
             <h3>World History</h3>
             <p>By Olivia Wason</p>
             <p>2022</p>
+          </a>
             <p><a href="category-textbook-page.html#cat-history-textbook" target="_blank">History-Textbook</a></p>
             <div class="rating">
               <i class="fa fa-star"></i>
@@ -325,8 +344,10 @@
         <div class="categories1-cover">
           <img src="img/categories/textbook/tech/2.png" alt="BookCover">
           <div class="book-info">
+            <a href="bookdetail-textbook-science-3.html">
             <h3>USB Technology</h3>
-            <p>By Jonathan Patterson</p><p>2021</p>
+            <p>By Patterson</p><p>2021</p>
+          </a>
             <p><a href="category-textbook-page.html#cat-science-textbook" target="_blank">Science-Textbook</a></p>
             <div class="rating">
               <i class="fa fa-star"></i>
@@ -341,9 +362,11 @@
         <div class="categories1-cover">
           <img src="img/categories/textbook/tech/1.png" alt="BookCover">
           <div class="book-info">
+            <a href="bookdetail-textbook-science-1.html">
             <h3>Machine Learning</h3>
             <p>By Aaron Loeb</p>
             <p>2020</p>
+          </a>
             <p><a href="category-textbook-page.html#cat-science-textbook" target="_blank">Science-Textbook</a></p>
             <div class="rating">
               <i class="fa fa-star"></i>
@@ -359,32 +382,43 @@
       
     </main>
     <footer>
-        <div class="row"> 
-            <div class="col">
+        <div class="footer-item"> 
+            <div class="footer-subitem">
                 <img src="img/logo/logo.png" alt="logofooter">
-                <p>Text helo my name is bui tuan anh im from viet nam welcome to my channel</p>
+                <p>Where Books Take You on an Endless Adventure.
+                  Where we will bring you the latest sources of knowledge and help you have the best experience.</p>
             </div>
-            <div class="col">
-                <h3>Our Special <div class="underline"><span></span></div></h3>
-                <p>Fast Delivery</p>
-                <p>Best Quanlity</p>
-                <p>Authentic</p>
-                <p>Update newest</p>
-                <p>Support 24/7</p>
+            <div class="footer-subitem">
+                <h3>Books Categories<div class="underline"><span></span></div></h3>
+                <a href="/index.html#bestbook-title">
+                <p>Books Of The Day</p>
+                </a>
+                <a href="category-fiction-page.html">
+                <p>Fiction</p>
+                </a>
+                <a href="category-nonfiction-page.html">
+                  <p>Non-Fiction</p>
+                  </a>
+                <a href="category-textbook-page.html">
+                  <p>Text-Book</p>
+                </a>
+                
+                
+                
                 
             </div>
-            <div class="col">
-                <h3>Links <div class="underline"><span></span></h3>
+            <div class="footer-subitem">
+                <h3>Terms and Conditions<div class="underline"><span></span></h3>
                 <ul>
                   <li><a href="">About Us</a></li>
                   <li><a href="">Privacy Policy</a></li>
                   <li><a href="">Terms</a></li>
                   <li><a href="">Copyright</a></li>
-                  <li><a href="">Contact Us</a></li>
+                  <li><a href="contact.html">Contact Us</a></li>
                 </ul>
             </div>
-            <div class="col">
-              <h3>Notice Latest Book <div class="underline"><span></span></h3>
+            <div class="footer-subitem">
+              <h3>Receive Weekly Newsletter <div class="underline"><span></span></h3>
               <form>
                 <i class="far fa-envelope"></i>
                 <input type="email" placeholder="Enter your email id">
@@ -399,7 +433,7 @@
             </div>
         </div>
         <hr>
-        <p class="copyright">TomBui @ 2023 - RMIT University</p>
+        <p class="copyright">TuanAnhBui @ WebProgramming 2023 - RMIT University</p>
     </footer>
 </body>
 </html>

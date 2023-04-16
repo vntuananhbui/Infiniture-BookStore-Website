@@ -13,38 +13,37 @@
     <header>
       <a href="index.html">
         <div class="logo">
-            
             <img src="img/logo/logo.png" alt="infinitive logo">
         </div>
       </a>
         <nav class="navbar">
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Categories</a></li>
-                <li><a href="#">Book Detail</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropbtn">Browse Categories </a>
+                    <div class="dropdown-content">
+                        <a href="category-fiction-page.html" target="_blank">Fiction Books</a>
+                        <a href="category-nonfiction-page.html" target="_blank">Nonfiction Books</a>
+                        <a href="category-textbook-page.html" target="_blank">Textbooks</a>
+                    </div>
+                </li>
+                <li><a href="contact.html" target="_blank">Contact Us</a></li>
+                <li>
+                  <a href="#">Support</a>
+                </li>
                 <li>
                     <a href="#"><i class="fa fa-shopping-cart"></i></a>
                 </li>
-                <li class="dropdown">
-                    <a href="#" class="dropbtn">Browse Categories</a>
-                    <div class="dropdown-content">
-                      <a href="category-fiction-page.html">Fiction Books</a>
-                      <a href="category-nofiction-page.html">Nonfiction Books</a>
-                      <a href="category-textbook-page.html">Textbooks</a>
-                    </div>
-                </li>
               </ul>
         </nav>
-           
-    </header>
+  </header>
     <top>
         <h1>TEXT BOOK</h1>
     </top>
     <main>
-        <h1>BUSINESS</h1>
+        <h1 id="cat-business-textbook">BUSINESS</h1>
       <div class="book-categories-container1">
-        <div class="categories1-cover" id="cat-business-textbook">
+        <div class="categories1-cover">
           <img src="img/categories/textbook/bussiness/1.png" alt="BookCover">
           <div class="book-info">
             <h3>Business Strategy</h3>
@@ -113,9 +112,9 @@
         </div>
       </div>
       <!-- Subcategory 2 -->
-      <h1>HISTORY</h1>
+      <h1 id="cat-history-textbook">HISTORY</h1>
       <div class="book-categories-container1">
-        <div class="categories1-cover" id="cat-history-textbook">
+        <div class="categories1-cover">
           <img src="img/categories/textbook/history/1.png" alt="BookCover">
           <div class="book-info">
             <h3>History of European</h3>
@@ -184,8 +183,8 @@
         </div>
       </div>
       <!-- Subcategory 3 -->
-      <h1>SCIENCE</h1>
-      <div class="book-categories-container1" id="cat-science-textbook">
+      <h1 id="cat-science-textbook">SCIENCE</h1>
+      <div class="book-categories-container1">
         <div class="categories1-cover" id="cat-science-textbook">
           <img src="img/categories/textbook/tech/1.png" alt="BookCover">
           <div class="book-info">
@@ -257,46 +256,53 @@
       </div>
     </main>
     <footer>
-        <div class="row"> 
-            <div class="col">
-                <img src="img/logo/logo.png" alt="logofooter">
-                <p>Text helo my name is bui tuan anh im from viet nam welcome to my channel</p>
+      <div class="footer-item"> 
+          <div class="footer-subitem">
+              <img src="img/logo/logo.png" alt="logofooter">
+              <p>Where Books Take You on an Endless Adventure.
+                Where we will bring you the latest sources of knowledge and help you have the best experience.</p>
+          </div>
+          <div class="footer-subitem">
+              <h3>Books Categories<div class="underline"><span></span></div></h3>
+              <a href="/index.html#bestbook-title">
+              <p>Books Of The Day</p>
+              </a>
+              <a href="category-fiction-page.html">
+              <p>Fiction</p>
+              </a>
+              <a href="category-nonfiction-page.html">
+                <p>Non-Fiction</p>
+                </a>
+              <a href="category-textbook-page.html">
+                <p>Text-Book</p>
+              </a>  
+          </div>
+          <div class="footer-subitem">
+              <h3>Terms and Conditions<div class="underline"><span></span></h3>
+              <ul>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Privacy Policy</a></li>
+                <li><a href="">Terms</a></li>
+                <li><a href="">Copyright</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+              </ul>
+          </div>
+          <div class="footer-subitem">
+            <h3>Receive Weekly Newsletter <div class="underline"><span></span></h3>
+            <form>
+              <i class="far fa-envelope"></i>
+              <input type="email" placeholder="Enter your email id">
+              <button type="submit"><i class="fas fa-arrow-right"></i></button>
+            </form>
+            <div class="social-icons">
+              <i class="fab fa-facebook-f"></i>
+              <i class="fab fa-instagram"></i>
+              <i class="fab fa-youtube"></i>
+              <i class="fab fa-twitter"></i>
             </div>
-            <div class="col">
-                <h3>Our Special <div class="underline"><span></span></div></h3>
-                <p>Fast Delivery</p>
-                <p>Best Quanlity</p>
-                <p>Authentic</p>
-                <p>Update newest</p>
-                <p>Support 24/7</p>
-                
-            </div>
-            <div class="col">
-                <h3>Links <div class="underline"><span></span></h3>
-                <ul>
-                  <li><a href="">About Us</a></li>
-                  <li><a href="">Privacy Policy</a></li>
-                  <li><a href="">Terms</a></li>
-                  <li><a href="">Copyright</a></li>
-                  <li><a href="">Contact Us</a></li>
-                </ul>
-            </div>
-            <div class="col">
-              <h3>Notice Latest Book <div class="underline"><span></span></h3>
-              <form>
-                <i class="far fa-envelope"></i>
-                <input type="email" placeholder="Enter your email id">
-                <button type="submit"><i class="fas fa-arrow-right"></i></button>
-              </form>
-              <div class="social-icons">
-                <i class="fab fa-facebook-f"></i>
-                <i class="fab fa-instagram"></i>
-                <i class="fab fa-youtube"></i>
-                <i class="fab fa-twitter"></i>
-              </div>
-            </div>
-        </div>
-        <hr>
-        <p class="copyright">TomBui @ 2023 - RMIT University</p>
-    </footer>
+          </div>
+      </div>
+      <hr>
+      <p class="copyright">TuanAnhBui @ WebProgramming 2023 - RMIT University</p>
+  </footer>
 </body>
