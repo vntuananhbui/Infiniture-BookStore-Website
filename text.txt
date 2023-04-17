@@ -56,7 +56,7 @@ textbook:
     science: category-textbook-page.html#cat-science-textbook / category-textbook-page.html#cat-science-textbook" target="_blank
 
 
-!!! Change ALT
+
 
 Alt book: 
 Fiction
@@ -73,3 +73,9 @@ Textbook
     history : text-history-1
     science: text-science-1
 
+----------------------
+!!!
+Finish Contact
+Finalize Website
+Report 
+!!!
