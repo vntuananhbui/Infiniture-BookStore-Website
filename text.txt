@@ -79,3 +79,9 @@ Finish Contact
 Finalize Website
 Report 
 !!!
+
+New work:
+Add kid zone for index.html and style.css
+Update all categories file with container border
+Update all footer with kid zone
+change responsive to 960px

@@ -488,7 +488,7 @@ Acknowledgement: https://www.w3schools.com/ , https://getcssscan.com/css-box-sha
   }
 
       /* Responsive  */
-      @media (max-width: 970px) {
+      @media (max-width: 960px) {
       /* Header Responsive */
       header {
           flex-direction: column;
@@ -532,7 +532,6 @@ Acknowledgement: https://www.w3schools.com/ , https://getcssscan.com/css-box-sha
           flex-wrap: wrap;
           justify-content: center;
           }
-
           .book-page {
           margin-right: 0;
           }

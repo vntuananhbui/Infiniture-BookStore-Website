@@ -16,18 +16,7 @@ Acknowledgement: https://www.w3schools.com/ , https://getcssscan.com/css-box-sha
 * {
   font-family: 'Rockwell';
 }
-/* a {
-  text-decoration: none;
-  color: black;
-  
-} */
-/* a:hover {
-text-decoration: underline;
-color: rgb(229, 233, 8);
-}
-.navbar a:hover {
-  color: yellow;
-} */
+
 top {
   display: flex;
   flex-direction: column;
@@ -93,13 +82,9 @@ top h1 {
       /* HEADER */
       header {
         display: flex;
-        padding: 20px;
-        /* background-image: linear-gradient(to right,#00093c,#2d0b00); */
+        padding: 20px; 
         background-image: linear-gradient(to right,#360033,#3c1053);
-        align-items: center;
-        /* position: fixed;
-        width: 100%;
-        top: 0; */
+        align-items: center;   
     }
     .logo {
         display: flex;
@@ -112,10 +97,7 @@ top h1 {
         vertical-align: middle;
       }
       
-    .banner-container {
-      /* position: relative; */
-      
-    }
+   
     
     .main-banner {
       width: 100%;
@@ -131,12 +113,11 @@ top h1 {
         display: flex;
         font-size: 20px;
         align-items: center;
-        /* justify-content: flex-end; */
         color: #fff;
         height: 50px;
         margin-left: auto;
         
-        /* margin: 0 auto; */
+
       }
       
     .navbar ul {
@@ -144,7 +125,7 @@ top h1 {
         list-style: none;
         display: flex;
         align-items: center;
-        /* justify-content: flex-end; */
+        
       }
       
     .navbar li {
@@ -177,11 +158,9 @@ top h1 {
       display: inline-block;
       
     }
-    /* .dropbtn i {
-      margin-left: 30px;
-    } */
+   
     .dropbtn {
-      /* background-color: lightblue; */
+      
       color: white;
       padding: 10px 20px;
       font-size: 16px;
@@ -296,7 +275,9 @@ top h1 {
         }
       
       }
- 
+      #cat-tech-category {
+
+      }
          /* subcategory title */
         main h1 {
           border-top: 6px solid black;
@@ -309,7 +290,7 @@ top h1 {
           justify-content: center;
           animation: border-color 6s infinite;
           text-align: center;
-          color: rgb(26, 2, 105)
+          color: rgb(26, 2, 105);
           ;
         }
         @keyframes border-color {
@@ -477,7 +458,7 @@ top h1 {
 
 
       /* Responsive */
-      @media (max-width: 970px) {
+      @media (max-width: 960px) {
           /* Header Responsive */
           header {
               flex-direction: column;
@@ -566,7 +547,7 @@ top h1 {
             flex-basis: 100%;
         }
 
-          @media only screen and (max-width: 969px) {
+          @media only screen and (max-width: 959px) {
             .bestbook-container {
               flex-basis: 100%;
               margin-right: 10px;

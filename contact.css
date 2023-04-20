@@ -223,12 +223,20 @@ Acknowledgement: https://www.w3schools.com/ , https://getcssscan.com/css-box-sha
     .right-box {
       flex: 0 0 800px; /* specify the initial width of the right box */
       height: 600px;
-       /* add a border to the right box */
       margin-left: 5px;
-      /* padding: 20px; */
       box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
     }
+    .right-box form {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-top: 0px;
+      padding: 20px;
+      padding-top: 5px;
+      color: black;
+      ; 
     
+  }
     .title {
         background-color: #00093c;
         /* margin: -20px; */
@@ -243,17 +251,7 @@ Acknowledgement: https://www.w3schools.com/ , https://getcssscan.com/css-box-sha
       
     }
 
-    .right-box form {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-top: 0px;
-        padding: 20px;
-        padding-top: 5px;
-        color: black;
-        ; /* set the backdrop-filter to blur with a radius of 5 pixels */
-      
-    }
+    
     .choose-option-1 {
       
         padding-bottom: 5px;
@@ -330,9 +328,7 @@ Acknowledgement: https://www.w3schools.com/ , https://getcssscan.com/css-box-sha
     
     }
     
-     /* .subinput-checkbox {
-      margin-right: 20px;
-    } */
+    
    .checkbox-container-contact {
      display: flex;
      margin-top: 20px;
@@ -572,7 +568,7 @@ button[type="reset"] {
 
 
     /* Responsive */
-    @media (max-width: 970px) {
+    @media (max-width: 960px) {
         /* Header Responsive */
           header {
             flex-direction: column;
@@ -655,7 +651,7 @@ button[type="reset"] {
           flex: 1;
           height: 800px;
           margin-left: 0;
-          margin-right: 5
+          margin-right: 5;
         }
        /* Footer Responsive*/
     footer {

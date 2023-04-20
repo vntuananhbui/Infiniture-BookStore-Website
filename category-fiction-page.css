@@ -300,6 +300,9 @@ display: block;
 }
 
   /* subcategory title */
+#cat-science-fiction {
+  
+}
 main h1 {
   border-top: 6px solid black;
   border-bottom: 6px solid black;
@@ -311,8 +314,8 @@ main h1 {
   justify-content: center;
   animation: border-color 6s infinite;
   text-align: center;
-  color: rgb(26, 2, 105)
-  ;
+  color: rgb(26, 2, 105);
+  
 }
 @keyframes border-color {
   0% {
@@ -480,7 +483,7 @@ hr {
 
     /* Responsive */
 
-    @media (max-width: 970px) {
+    @media (max-width: 960px) {
         /* Header Responsive */
         header {
             flex-direction: column;

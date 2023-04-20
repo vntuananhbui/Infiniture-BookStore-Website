@@ -297,7 +297,7 @@ top h1 {
   }
 
   }
-
+#cat-business-textbook {}
     /* subcategory title */
   main h1 {
     border-top: 6px solid black;
@@ -310,7 +310,7 @@ top h1 {
     justify-content: center;
     animation: border-color 6s infinite;
     text-align: center;
-    color: rgb(26, 2, 105)
+    color: rgb(26, 2, 105);
     ;
   }
   @keyframes border-color {
@@ -479,7 +479,7 @@ top h1 {
 
       /* Responsive */
 
-      @media (max-width: 970px) {
+      @media (max-width: 960px) {
           /* Header Responsive */
           header {
               flex-direction: column;
@@ -537,7 +537,7 @@ top h1 {
             display: flex;
             flex-direction: column;
             overflow-x: scroll;
-            height: 300px; /* set a fixed height for the container */
+            height: 300px; 
           }
           .categories1-cover {
             width: 100%; /* set the width of the container to 100% to take up the entire width of the screen */
@@ -573,7 +573,7 @@ top h1 {
 
         /* Display 1 Best book and Scroll when in Responsive mode */
 
-          @media only screen and (max-width: 969px) {
+          @media only screen and (max-width: 959px) {
             .bestbook-container {
               flex-basis: 100%;
               margin-right: 10px;
